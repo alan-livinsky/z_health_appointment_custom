@@ -9,10 +9,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
 <tryton>
     <data>
         <!--
-            Inherit from the same base view as health_appointment_fiuner.
-            Tryton applies xpaths in module dependency order:
-              1. health_appointment_fiuner xpaths run first (adds phone/dni/age/etc, widens columns)
-              2. our xpaths run after — move healthprof before patient on the resolved tree
+            Inherit from same base as health_appointment_fiuner.
+            Xpaths apply after fiuner's (module dependency order).
+            Goal: healthprof | date | time | patient | rest...
         -->
         <record model="ir.ui.view" id="view_gnuhealth_appointment_tree_custom">
             <field name="model">gnuhealth.appointment</field>
@@ -20,10 +19,10 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="name">gnuhealth_appointment_tree_custom</field>
             <field name="arch" type="xml"><![CDATA[
                 <data>
-                    <!-- Remove healthprof from its current position (near end of tree) -->
+                    <!-- Remove healthprof from its current position (near end) -->
                     <xpath expr="/tree/field[@name='healthprof']" position="replace"/>
-                    <!-- Re-insert healthprof before patient, with same attrs fiuner sets -->
-                    <xpath expr="/tree/field[@name='patient']" position="before">
+                    <!-- Insert healthprof before the date column (first appointment_date) -->
+                    <xpath expr="/tree/field[@name='appointment_date'][@widget='date']" position="before">
                         <field name="healthprof" expand="1" width="300"/>
                     </xpath>
                 </data>
