@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+
+        <record model="ir.action.report" id="report_daily_appointment">
+            <field name="name">Reporte por servicio</field>
+            <field name="model">gnuhealth.appointment</field>
+            <field name="report_name">gnuhealth.report.daily</field>
+            <field name="report">health_appointment_fiuner/report/daily_report_er.odt</field>
+        </record>
+        <record model="ir.action.keyword" id="report_unit_appointment">
+            <field name="keyword">form_print</field>
+            <field name="model">gnuhealth.appointment,-1</field>
+            <field name="action" ref="report_daily_appointment"/>
+        </record>
+
+        <record model="ir.action.report" id="report_daily_appointment_LEGAL">
+            <field name="name">Reporte por servicio - LEGAL</field>
+            <field name="model">gnuhealth.appointment</field>
+            <field name="report_name">gnuhealth.report.daily</field>
+            <field name="report">health_appointment_fiuner/report/daily_report_er_legal.odt</field>
+        </record>
+        <record model="ir.action.keyword" id="report_unit_appointment_LEGAL">
+            <field name="keyword">form_print</field>
+            <field name="model">gnuhealth.appointment,-1</field>
+            <field name="action" ref="report_daily_appointment_LEGAL"/>
+        </record>
+
+    </data>
+</tryton>

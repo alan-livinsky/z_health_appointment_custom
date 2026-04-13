@@ -1,0 +1,10 @@
+ <tryton>
+    <data>
+        <record model="ir.action.report" id="act_gnuhealth_appointment_report">
+            <field name="name">Appointment Report</field>
+            <field name="report_name">gnuhealth.appointment.appointment_report</field>
+            <field name="report">health_appointment_fiuner/report/diary_appointment_report.odt</field>
+        </record>
+    </data>
+</tryton>
+ 

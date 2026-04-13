@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<data>
+    <xpath expr='/tree/field[@name=&quot;active&quot;]' position="before">
+        <field name="has_appointments" tree_invisible="1"/>
+        <field name="last_appointment" widget="date" tree_invisible="1"/>
+    </xpath>
+</data>

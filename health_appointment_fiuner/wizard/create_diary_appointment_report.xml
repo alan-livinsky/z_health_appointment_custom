@@ -1,0 +1,19 @@
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="create_appointment_report_start_view">
+            <field name="model">gnuhealth.appointment.diary_report.start</field>
+            <field name="type">form</field>
+            <field name="name">create_appointment_report_start</field>
+        </record>
+
+        <record model="ir.action.wizard" id="act_create_appointment_report_wizard">
+            <field name="name">Appointment Report</field>
+            <field name="wiz_name">gnuhealth.appointment.diary_report.wizard</field>
+        </record>
+
+        <menuitem name="Appointment Report"
+                id="gnuhealth_appointment_report_wizard_menu"
+                action="act_create_appointment_report_wizard"
+                parent="health.gnuhealth_appointment_menu" sequence="105"/>
+    </data>
+</tryton>

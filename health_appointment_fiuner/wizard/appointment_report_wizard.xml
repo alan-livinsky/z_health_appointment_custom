@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="statistical_report_appointment_view_form">
+            <field name="model">gnuhealth.appointment.report.start</field>
+            <field name="type">form</field>
+            <field name="name">appointment_report_start_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="statistical_report_appointment_wizard">
+            <field name="name">Statistical report of appointments</field>
+            <field name="wiz_name">gnuhealth.appointment.report.wizard</field>
+        </record>
+        <menuitem 
+            name="Statistical report of appointments"
+            action="statistical_report_appointment_wizard"
+            id="menu_statistical_report_appointment"
+            parent="health.gnuhealth_reporting_menu"
+            sequence="100"
+            />
+    </data>
+</tryton>

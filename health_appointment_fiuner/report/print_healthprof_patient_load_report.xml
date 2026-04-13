@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+        <record model="ir.action.report" id="act_print_hp_patient_load_report">
+            <field name="name">Print Health Professional Patient Load</field>
+            <field name="report_name">gnuhealth.appointment.print_hp_patient_load.report</field>
+            <field name="report">health_appointment_fiuner/report/print_hp_patient_load.fodt</field>
+        </record>
+    </data>
+</tryton>

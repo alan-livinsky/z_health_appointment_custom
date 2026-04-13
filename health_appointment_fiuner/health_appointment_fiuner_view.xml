@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <!-- Patient -->
+        <record model="ir.ui.view" id="view_gnuhealth_patient_fiuner_tree">
+            <field name="model">gnuhealth.patient</field>
+            <field name="inherit" ref="health.gnuhealth_patient_tree"/>
+            <field name="name">gnuhealth_patient_tree</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_gnuhealth_patient_fiuner_form">
+            <field name="model">gnuhealth.patient</field>
+            <field name="inherit" ref="health.gnuhealth_patient_view_form"/>
+            <field name="name">gnuhealth_patient_form</field>
+        </record>
+
+        <!-- Appointment -->
+        <record model="ir.ui.view" id="view_gnuhealth_appointment_fiuner_tree">
+            <field name="model">gnuhealth.appointment</field>
+            <field name="inherit" ref="health.gnuhealth_appointment_tree"/>
+            <field name="name">gnuhealth_appointment_tree</field>
+        </record>
+
+        <record model="ir.action.act_window.domain" id="act_gnuhealth_appointment_domain_confirmed_today">
+            <field name="name">Confirmed Today</field>
+            <field name="sequence" eval="5"/>
+            <field name="domain" eval="[('state','=','confirmed'),
+                   ('appointment_date','>=',DateTime(hour=2,minute=59,second=59)),
+                   ('appointment_date','&lt;',DateTime(hour=3,minute=0,second=0,delta_days=1)),]" pyson="1"/>
+            <field name="act_window" ref="health.action_gnuhealth_appointment_view"/>
+        </record>
+
+        <record model="ir.action.act_window.domain" id="act_gnuhealth_appointment_domain_today_all">
+            <field name="name">Today Appointments</field>
+            <field name="sequence" eval="6"/>
+            <field name="domain" eval="[
+                   ('appointment_date','>=',DateTime(hour=2,minute=59,second=59)),
+                   ('appointment_date','&lt;',DateTime(hour=3,minute=0,second=0,delta_days=1)),]" pyson="1"/>
+            <field name="act_window" ref="health.action_gnuhealth_appointment_view"/>
+        </record>
+
+        <record model="ir.ui.view" id="view_gnuhealth_appointment_fiuner_form">
+            <field name="model">gnuhealth.appointment</field>
+            <field name="inherit" ref="health.gnuhealth_appointment_form"/>
+            <field name="name">gnuhealth_appointment_form</field>
+        </record>
+
+        <!-- Health Professional -->
+        <record model="ir.ui.view" id="view_gnuhealth_healthprofessional_fiuner">
+            <field name="model">gnuhealth.healthprofessional</field>
+            <field name="inherit" ref="health.gnuhealth_healthprofessional_view"/>
+            <field name="name">gnuhealth_healthprofessional</field>
+        </record>
+    </data>
+</tryton>
+

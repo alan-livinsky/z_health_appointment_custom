@@ -1,0 +1,481 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"X-Generator: Poedit 2.2.1\n"
+
+
+
+msgctxt "field:gnuhealth.appointment,absentism_warning:"
+msgid "Absentism warning"
+msgstr "Advertencia de ausentismo"
+
+msgctxt "model:gnuhealth.appointment.report.start,name:"
+msgid "Request Prescription Batch Start"
+msgstr ""
+
+msgctxt "model:ir.action,name:statistical_report_appointment_wizard"
+msgid "Statistical report of appointments"
+msgstr "Reporte estadistico de citas"
+
+msgctxt "model:ir.ui.menu,name:menu_statistical_report_appointment"
+msgid "Statistical report of appointments"
+msgstr "Reporte estadistico de citas"
+
+msgctxt "field:gnuhealth.appointment.report.start,check_in:"
+msgid "Checked in"
+msgstr "Registrado"
+
+msgctxt "help:gnuhealth.appointment.report.start,check_in:"
+msgid "Check in"
+msgstr "Registrado"
+
+msgctxt ""
+"help:gnuhealth.calendar.create.appointment.start,daily_appointment_quantity:"
+msgid "Cantidad de turnos a otorgar"
+msgstr "Cantidad de turnos a otorgar"
+
+msgctxt "help:gnuhealth.healthprofessional,daily_appointment_quantity:"
+msgid "Cantidad de turnos a otorgar"
+msgstr "Cantidad de turnos a otorgar"
+
+msgctxt "help:gnuhealth.healthprofessional,is_doctor:"
+msgid "Check if it is a doctor"
+msgstr "Tildar si es un médico"
+
+msgctxt "field:gnuhealth.appointment.report.start,confirmed:"
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgctxt "field:gnuhealth.appointment.report.start,done:"
+msgid "Done"
+msgstr "Realizado"
+
+msgctxt "field:gnuhealth.appointment.report.start,end_date:"
+msgid "End Date"
+msgstr "Fecha finalización"
+
+msgctxt "field:gnuhealth.appointment.report.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.appointment.report.start,start_date:"
+msgid "Start Date"
+msgstr "Fecha Inicio"
+
+msgctxt ""
+"field:gnuhealth.calendar.create.appointment.start,daily_appointment_quantity:"
+msgid "Cantidad de turnos por día"
+msgstr "Cantidad de turnos por día"
+
+msgctxt "field:gnuhealth.calendar.create.appointment.start,visit_type:"
+msgid "Visit"
+msgstr "Visita"
+
+msgctxt "field:gnuhealth.healthprofessional,appointment_minutes:"
+msgid "Minutos entre entre citas"
+msgstr "Minutos entre citas"
+
+msgctxt "field:gnuhealth.healthprofessional,daily_appointment_quantity:"
+msgid "Cantidad de turnos por día"
+msgstr "Cantidad de turnos por día"
+
+msgctxt "field:gnuhealth.healthprofessional,friday:"
+msgid "Viernes"
+msgstr "Viernes"
+
+msgctxt "field:gnuhealth.healthprofessional,monday:"
+msgid "Lunes"
+msgstr "Lunes"
+
+msgctxt "field:gnuhealth.healthprofessional,saturday:"
+msgid "Sábado"
+msgstr "Sábado"
+
+msgctxt "field:gnuhealth.healthprofessional,sunday:"
+msgid "Domingo"
+msgstr "Domingo"
+
+msgctxt "field:gnuhealth.healthprofessional,thursday:"
+msgid "Jueves"
+msgstr "Jueves"
+
+msgctxt "field:gnuhealth.healthprofessional,time_end:"
+msgid "Hora de Fin"
+msgstr "Hora de Fin"
+
+msgctxt "field:gnuhealth.healthprofessional,time_start:"
+msgid "Hora de Inicio"
+msgstr "Hora de Inicio"
+
+msgctxt "field:gnuhealth.healthprofessional,tuesday:"
+msgid "Martes"
+msgstr "Martes"
+
+msgctxt "field:gnuhealth.healthprofessional,wednesday:"
+msgid "Miércoles"
+msgstr "Miércoles"
+
+msgctxt "wizard_button:gnuhealth.appointment.report.wizard,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:gnuhealth.appointment.report.wizard,start,request:"
+msgid "Print Report"
+msgstr "Imprimir Reporte"
+
+msgctxt "field:gnuhealth.healthprofessional,is_doctor:"
+msgid "Is a doctor?"
+msgstr "¿Es un médico?"
+
+msgctxt "help:gnuhealth.healthprofessional,is_doctor:"
+msgid "Check if it is a doctor?"
+msgstr "Tildar si es un médico"
+
+msgctxt "field:gnuhealth.patient,has_appointments:"
+msgid "Has appointments"
+msgstr "Tiene citas"
+
+msgctxt "field:gnuhealth.patient,last_appointment:"
+msgid "Last date"
+msgstr "Ultima cita"
+
+msgctxt "field:gnuhealth.print.daily.appointment.start,appointment_date:"
+msgid "Fecha de la cita"
+msgstr ""
+
+msgctxt "field:gnuhealth.print.daily.appointment.start,health_profs:"
+msgid "Profesionales de salud"
+msgstr ""
+
+msgctxt "help:gnuhealth.appointment,absentism_warning:"
+msgid ""
+"Warn if three times consecutives the patient didn't show or cancelled the "
+"appointment"
+msgstr ""
+"Advertir si durante tres citas consecutivas el paciente no se presento o "
+"cancelo la cita"
+
+msgctxt "help:gnuhealth.appointment,age:"
+msgid "Edad al momento de la cita"
+msgstr "Edad al momento de la cita"
+
+msgctxt "help:gnuhealth.patient,has_appointments:"
+msgid "Checked if the patient has any appointment"
+msgstr "Chequeado si el paciente ha tenido alguna cita"
+
+msgctxt "help:gnuhealth.patient,last_appointment:"
+msgid "Get the last appointment confirmed, checked in or done"
+msgstr "Fecha de la ultima cita confirmada, registrada o hecha"
+
+
+msgctxt "error:gnuhealth.appointment.diary_report.wizard:"
+msgid "The end date cannot be major thant the start date"
+msgstr ""
+"La fecha de fin no puede ser anterior a la fecha de inicio del reporte"
+
+msgctxt "field:gnuhealth.appointment,age:"
+msgid "Age"
+msgstr "Edad"
+
+
+msgctxt "field:gnuhealth.appointment,appointment_kind:"
+msgid "Appointment kind"
+msgstr "Tipo de cita"
+
+msgctxt "field:gnuhealth.appointment,chronic:"
+msgid "Cronico"
+msgstr "Crónico"
+
+msgctxt "field:gnuhealth.appointment,dni:"
+msgid "DNI"
+msgstr ""
+
+msgctxt "field:gnuhealth.appointment,current_insurance:"
+msgid "Insurance"
+msgstr "Obra Social actual"
+
+msgctxt "field:gnuhealth.appointment,dni:"
+msgid "DNI"
+msgstr "DNI"
+
+msgctxt "field:gnuhealth.appointment,gender:"
+msgid "Sex"
+msgstr "Sexo"
+
+msgctxt "field:gnuhealth.appointment,hc:"
+msgid "HC"
+msgstr "HC"
+
+msgctxt "field:gnuhealth.appointment,insurance:"
+msgid "Insurance"
+msgstr "Obra Social"
+
+msgctxt "field:gnuhealth.appointment,phone:"
+msgid "Phone"
+msgstr "Teléfono"
+
+msgctxt "field:gnuhealth.appointment,qr_code:"
+msgid "QR Code"
+msgstr "Código  QR"
+
+msgctxt "selection:gnuhealth.appointment,appointment_kind:"
+msgid ""
+msgstr ""
+
+msgctxt "selection:gnuhealth.appointment,appointment_kind:"
+msgid "Spontaneous"
+msgstr "Espontanea"
+
+msgctxt "selection:gnuhealth.appointment,appointment_kind:"
+msgid "Active uptake"
+msgstr "Captación activa"
+
+msgctxt "selection:gnuhealth.appointment,appointment_kind:"
+msgid "Scheduled appointment"
+msgstr "Turno programado"
+
+msgctxt "selection:gnuhealth.appointment,appointment_kind:"
+msgid "Protected appointment"
+msgstr "Turno protegido"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_confirmed_today"
+msgid "Confirmed today"
+msgstr "Confirmados para hoy"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_today_all"
+msgid "Today Appointments"
+msgstr "Turnos para hoy"
+
+msgctxt "model:ir.message,text:msg_not_dni"
+msgid ""
+"El Paciente no se encuentra en la Base de Datos con ese DNI\\n'\n"
+"                Por favor revise si está registrado\\n\n"
+"                Si no lo está, registrarlo desde el Menú \"Nuevo Paciente\" a través del ReNaPer o escaneando el DNI en la Lectora QR'\n"
+"            "
+msgstr ""
+
+msgctxt "model:ir.message,text:msg_period_too_long"
+msgid "The period is too long. It should be less than 31 days"
+msgstr "El periodo es demasiado largo. Debe ser menor a 31 días"
+
+msgctxt ""
+"model:ir.ui.menu,name:appointment_health_professional_patient_load_menu"
+msgid "Health Professional Patient Load"
+msgstr "Carga de Paciente por Profesional de Salud"
+
+
+msgctxt "model:ir.message,text:msg_end_date_before_start_date"
+msgid "The end date cannot be major thant the start date"
+msgstr ""
+"La fecha de finalización no puede ser mayor "
+"a la de inicio"
+
+msgctxt "model:ir.message,text:msg_no_company_timezone"
+msgid "There is no timezone defined for this company"
+msgstr "No hay zona horaria definida para esta compañia"
+
+msgctxt "model:ir.message,text:msg_no_patient"
+msgid "This appointment has no patient"
+msgstr "Esta cita no tiene paciente"
+
+msgctxt "model:ir.message,text:msg_no_record_selected"
+msgid "You need to select one Appointment record"
+msgstr "Debe seleccionar un registro de Cita"
+
+msgctxt "model:ir.action,name:act_open_app_patient"
+msgid "Patient"
+msgstr "Paciente"
+
+msgctxt "model:ir.action,name:print_daily_appointment_report_wizard"
+msgid "Imprimir citas del día"
+msgstr "Imprimir citas del día"
+
+msgctxt "model:ir.action,name:report_appointment_report"
+msgid "Informe Estadístico de Citas"
+msgstr "Informe Estadístico de Citas"
+
+msgctxt "model:ir.action,name:report_daily_appointment"
+msgid "Reporte por servicio"
+msgstr "Reporte por servicio"
+
+msgctxt "model:ir.action,name:report_daily_appointment_LEGAL"
+msgid "Reporte por servicio - LEGAL"
+msgstr "Reporte por servicio - LEGAL"
+
+msgctxt "field:gnuhealth.appointment.diary_report.start,end_date:"
+msgid "End Date"
+msgstr "Fecha finalización"
+
+msgctxt "field:gnuhealth.appointment.diary_report.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:gnuhealth.appointment.diary_report.start,professional:"
+msgid "Health Prof"
+msgstr "Prof.  Salud"
+
+msgctxt "field:gnuhealth.appointment.diary_report.start,report_:"
+msgid "Appointment Report"
+msgstr "Informe de Turnos"
+
+msgctxt "field:gnuhealth.appointment.diary_report.start,start_date:"
+msgid "Start Date"
+msgstr "Fecha Inicio"
+
+msgctxt ""
+"field:gnuhealth.appointment.print_hp_patient_load.start,add_hps_period:"
+msgid "Add health professional in this period"
+msgstr "Sumar profesional de salud durante este periodo"
+
+msgctxt "field:gnuhealth.appointment.print_hp_patient_load.start,end_date:"
+msgid "End date"
+msgstr "Fecha de fin"
+
+msgctxt "field:gnuhealth.appointment.print_hp_patient_load.start,hps:"
+msgid "Health Professional"
+msgstr "Profesional de Salud"
+
+msgctxt "field:gnuhealth.appointment.print_hp_patient_load.start,start_date:"
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+
+msgctxt "help:gnuhealth.appointment.diary_report.start,professional:"
+msgid "Health professional"
+msgstr "Profesional"
+
+msgctxt "model:gnuhealth.appointment.diary_report.start,name:"
+msgid "Appointment Report Start"
+msgstr "Reporte de Citas - Inicio"
+
+msgctxt "model:gnuhealth.appointment.print_hp_patient_load.start,name:"
+msgid "Print Health Prof Patient Load - Start"
+msgstr "Imprimir Carga de Pacientes por Profesional - Inicio"
+
+msgctxt "model:gnuhealth.print.daily.appointment.start,name:"
+msgid "Print Daily Appointments Start"
+msgstr "Imprimir Citas Diarias - Inicio"
+
+msgctxt "model:ir.action,name:act_app_patient"
+msgid "Patient"
+msgstr "Paciente"
+
+msgctxt "model:ir.action,name:act_print_hp_patient_load_report"
+msgid "Print Health Professional Patient Load"
+msgstr "Imprimir Carga de Pacientes por Profesional de Salud"
+
+msgctxt "model:ir.action,name:act_print_hp_patient_load_wizard"
+msgid "Health Professional Patient Load"
+msgstr "Carga de Pacientes por Profesional de Salud"
+
+msgctxt "model:ir.action,name:act_create_appointment_report_wizard"
+msgid "Appointment Report"
+msgstr "Informe de Turnos"
+
+msgctxt "model:ir.action,name:act_gnuhealth_appointment_report"
+msgid "Appointment Report"
+msgstr "Informe de Turnos"
+
+msgctxt "model:ir.ui.menu,name:gnuhealth_appointment_report_wizard_menu"
+msgid "Appointment Report"
+msgstr "Informe de Turnos"
+
+msgctxt "model:ir.ui.menu,name:menu_print_dailly_appointment_report"
+msgid "Imprimir citas del día"
+msgstr "Imprimir citas del día"
+
+msgctxt "selection:gnuhealth.appointment,chronic:"
+msgid ""
+msgstr ""
+
+msgctxt "selection:gnuhealth.appointment,chronic:"
+msgid "No"
+msgstr "No"
+
+msgctxt "selection:gnuhealth.appointment,chronic:"
+msgid "Si"
+msgstr "Sí"
+
+msgctxt "selection:gnuhealth.appointment,gender:"
+msgid ""
+msgstr "Genero"
+
+msgctxt "selection:gnuhealth.appointment,gender:"
+msgid "Femenino"
+msgstr "Femenino"
+
+msgctxt "selection:gnuhealth.appointment,gender:"
+msgid "Masculino"
+msgstr "Masculino"
+
+msgctxt "selection:gnuhealth.appointment.diary_report.start,report_:"
+msgid "Appointment Report"
+msgstr "Informe de Turnos"
+
+msgctxt "selection:gnuhealth.calendar.create.appointment.start,visit_type:"
+msgid "Followup"
+msgstr "Seguimiento"
+
+msgctxt "selection:gnuhealth.calendar.create.appointment.start,visit_type:"
+msgid "New health condition"
+msgstr "Nueva condición de salud"
+
+msgctxt "selection:gnuhealth.calendar.create.appointment.start,visit_type:"
+msgid "Well Child visit"
+msgstr "Visita de Niño sano"
+
+msgctxt "selection:gnuhealth.calendar.create.appointment.start,visit_type:"
+msgid "Well Man visit"
+msgstr "Visita de Hombre sano"
+
+msgctxt "selection:gnuhealth.calendar.create.appointment.start,visit_type:"
+msgid "Well Woman visit"
+msgstr "Visita de Mujer sana"
+
+msgctxt "view:gnuhealth.healthprofessional:"
+msgid "Work Schedule"
+msgstr "Horario de Trabajo"
+
+msgctxt "wizard_button:gnuhealth.appointment.diary_report.wizard,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt ""
+"wizard_button:gnuhealth.appointment.diary_report.wizard,start,prevalidate:"
+msgid "Print Report"
+msgstr "Imprimir Reporte"
+
+msgctxt ""
+"wizard_button:gnuhealth.appointment.print_hp_patient_load.wizard,start,end:"
+msgid "Cancel"
+msgstr "Cancelar "
+
+msgctxt ""
+"wizard_button:gnuhealth.appointment.print_hp_patient_load.wizard,start,print_:"
+msgid "Print"
+msgstr "Imprimir"
+
+msgctxt "wizard_button:gnuhealth.print.daily.appointment.wizard,start,end:"
+msgid "Cancelar"
+msgstr "Cancelar"
+
+msgctxt ""
+"wizard_button:gnuhealth.print.daily.appointment.wizard,start,print_a4:"
+msgid "Imprimir Reporte - A4"
+msgstr "Imprimir Reporte - A4"
+
+msgctxt ""
+"wizard_button:gnuhealth.print.daily.appointment.wizard,start,print_legal:"
+msgid "Imprimir Reporte - LEGAL"
+msgstr "Imprimir Reporte - LEGAL"

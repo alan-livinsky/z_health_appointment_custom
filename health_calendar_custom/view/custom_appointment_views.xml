@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+SPDX-FileCopyrightText: 2008-2023 Luis Falcón <falcon@gnuhealth.org>
+SPDX-FileCopyrightText: 2011-2023 GNU Solidario <health@gnusolidario.org>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tryton>
+    <data>
+
+        <!-- Inherit from fiuner's tree view and reorder columns (Health Professional first) -->
+        <record model="ir.ui.view" id="gnuhealth_appointment_tree_custom">
+            <field name="model">gnuhealth.appointment</field>
+            <field name="inherit" ref="health_appointment_fiuner.view_gnuhealth_appointment_fiuner_tree"/>
+            <field name="name">gnuhealth_appointment_tree_custom</field>
+            <field name="arch" type="xml">
+                <!-- Move healthprof field to appear before patient -->
+                <xpath expr="/tree/field[@name='patient']" position="before">
+                    <field name="healthprof" expand="1" width="300"/>
+                </xpath>
+                <!-- Remove the original healthprof that appears after patient -->
+                <xpath expr="/tree/field[@name='healthprof'][preceding-sibling::field[@name='patient']]" position="replace"/>
+            </field>
+        </record>
+
+        <!-- Override the calendar action to use custom tree view -->
+        <record model="ir.action.act_window.view" id="act_gnuhealth_appointment_tree_calendar_custom">
+            <field name="sequence" eval="0"/>
+            <field name="view" ref="gnuhealth_appointment_tree_custom"/>
+            <field name="act_window" ref="health_calendar.action_gnuhealth_appointment_calendar"/>
+        </record>
+
+    </data>
+</tryton>

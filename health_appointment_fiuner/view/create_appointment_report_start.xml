@@ -1,0 +1,13 @@
+<form>
+    <field name="report_" invisible="1"/>
+    <newline/>
+    <label name="start_date"/>
+    <field name="start_date"/>
+    <newline/>
+    <label name="end_date"/>
+    <field name="end_date"/>
+    <newline/>
+    <label name="professional"/>
+    <field name="professional"/>
+</form>
+	 

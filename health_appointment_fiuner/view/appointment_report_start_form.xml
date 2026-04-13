@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<form>    
+    <label name="start_date"/>
+    <field name="start_date"/>
+    <label name="end_date"/>
+    <field name="end_date"/>
+    <label name="confirmed"/>
+    <field name="confirmed"/>
+    <label name="check_in"/>
+    <field name="check_in"/>
+    <label name="done"/>
+    <field name="done"/>
+</form>

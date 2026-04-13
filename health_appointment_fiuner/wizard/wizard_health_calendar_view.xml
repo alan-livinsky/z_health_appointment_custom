@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tryton>
+    <data>
+        <!-- mods to health_calendar -->
+        <record model="ir.ui.view" id="ext_create_appointment_start_view_form">
+            <field name="model">gnuhealth.calendar.create.appointment.start</field>
+            <field name="inherit" ref="health_calendar.create_appointment_start_view_form"/>
+            <field name="name">gnuhealth_create_appointment_start_form</field>
+        </record>
+    </data>
+</tryton>
