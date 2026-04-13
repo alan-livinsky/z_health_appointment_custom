@@ -8,18 +8,20 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 <tryton>
     <data>
-
         <!-- Inherit from fiuner's tree view and reorder columns (Health Professional first) -->
         <record model="ir.ui.view" id="gnuhealth_appointment_tree_custom">
             <field name="model">gnuhealth.appointment</field>
             <field name="inherit" ref="health_appointment_fiuner.view_gnuhealth_appointment_fiuner_tree"/>
             <field name="name">gnuhealth_appointment_tree_custom</field>
-            <field name="arch" type="xml"><![CDATA[<xpath expr="/tree/field[@name='patient']" position="before">
-                    <field name="healthprof" expand="1" width="300"/>
-                </xpath>
-                <xpath expr="/tree/field[@name='healthprof'][preceding-sibling::field[@name='patient']]" position="replace"/>]]></field>
+            <field name="arch" type="xml"><![CDATA[
+                <data>
+                    <xpath expr="/tree/field[@name='patient']" position="before">
+                        <field name="healthprof" expand="1" width="300"/>
+                    </xpath>
+                    <xpath expr="/tree/field[@name='healthprof'][preceding-sibling::field[@name='patient']]" position="replace"/>
+                </data>
+            ]]></field>
         </record>
-
         <!-- Override the calendar action to use custom tree view -->
         <record model="ir.action.act_window.view" id="act_gnuhealth_appointment_tree_calendar_custom">
             <field name="sequence" eval="0"/>
