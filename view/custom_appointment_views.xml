@@ -14,14 +14,18 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="name">gnuhealth_appointment_tree_custom</field>
             <field name="arch" type="xml"><![CDATA[
                 <data>
-                    <!-- Replace first appointment_date with [date + healthprof].
-                         Original date consumed by replace — no duplicate. -->
-                    <xpath expr="/tree/field[@name='appointment_date']" position="replace">
-                        <field name="appointment_date" string="Date" widget="date"/>
+                    <!-- Step 1: remove time — now only ONE appointment_date left (date field) -->
+                    <xpath expr="/tree/field[@name='appointment_date'][@widget='time']" position="replace"/>
+                    <!-- Step 2: remove healthprof from end -->
+                    <xpath expr="/tree/field[@name='healthprof']" position="replace"/>
+                    <!-- Step 3: insert healthprof after the now-unique appointment_date (=Fecha) -->
+                    <xpath expr="/tree/field[@name='appointment_date']" position="after">
                         <field name="healthprof" expand="1" width="300"/>
                     </xpath>
-                    <!-- Remove original healthprof from its old position (near end) -->
-                    <xpath expr="/tree/field[@name='healthprof']" position="replace"/>
+                    <!-- Step 4: insert time after healthprof (unique anchor, reliable) -->
+                    <xpath expr="/tree/field[@name='healthprof']" position="after">
+                        <field name="appointment_date" string="Time" widget="time"/>
+                    </xpath>
                 </data>
             ]]></field>
         </record>
