@@ -22,14 +22,10 @@ SPDX-License-Identifier: GPL-3.0-or-later
                 <data>
                     <!-- Remove healthprof from its current position (near end of tree) -->
                     <xpath expr="/tree/field[@name='healthprof']" position="replace"/>
-                    <xpath expr="/tree/field[@name='appointment_date']" position="replace"/>
-                    <xpath expr="/tree/field[@name='appointment_date']" position="replace"/>
-
                     <!-- Re-insert healthprof before patient, with same attrs fiuner sets -->
+                    
                     <xpath expr="/tree/field[@name='patient']" position="before">
                         <field name="healthprof" expand="1" width="300"/>
-                        <field name="appointment_date" string="Date" widget="date"/>
-                        <field name="appointment_date" string="Time" widget="date"/>
                     </xpath>
                 </data>
             ]]></field>
