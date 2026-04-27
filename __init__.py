@@ -4,6 +4,6 @@
 #                       GNU Health project                              #
 #                   https://www.gnuhealth.org                           #
 #########################################################################
-#                HEALTH CALENDAR CUSTOM PACKAGE                         # 
-#         Custom extensions for health calendar module                  #
+#              Z HEALTH APPOINTMENT CUSTOM PACKAGE                      #
+#        Custom extensions for GNU Health appointment views             #
 #########################################################################
