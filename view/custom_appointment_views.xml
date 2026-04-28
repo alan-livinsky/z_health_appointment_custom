@@ -39,6 +39,13 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
                     <!-- Keep patient immediately after healthprof -->
                     <xpath expr="/tree/field[@name='patient']" position="replace"/>
+                    <xpath expr="/tree/field[@name='phone']" position="replace"/>
+                    <xpath expr="/tree/field[@name='dni']" position="replace"/>
+                    <xpath expr="/tree/field[@name='age']" position="replace"/>
+                    <xpath expr="/tree/field[@name='gender']" position="replace"/>
+                    <xpath expr="/tree/field[@name='hc']" position="replace"/>
+                    <xpath expr="/tree/field[@name='chronic']" position="replace"/>
+                    <xpath expr="/tree/field[@name='current_insurance']" position="replace"/>
                     <xpath expr="/tree/field[@name='state']" position="before">
                         <field name="healthprof" expand="1" width="300"/>
                         <field name="patient" expand="1" width="300"/>
@@ -48,6 +55,13 @@ SPDX-License-Identifier: GPL-3.0-or-later
                         <button name="call" help="" string="Llamar"/>
                         <button name="in_atention" help="" string="En atención"/>
                         <button name="no_show" help="The patient did not show up" string="No show"/>
+                        <field name="phone"/>
+                        <field name="dni" expand="1"/>
+                        <field name="age" expand="1"/>
+                        <field name="gender" expand="1"/>
+                        <field name="hc" expand="1"/>
+                        <field name="chronic" expand="1"/>
+                        <field name="current_insurance" expand="1"/>
                     </xpath>
                 </data>
             ]]></field>
