@@ -20,6 +20,11 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <field name="name">gnuhealth_appointment_tree_custom</field>
             <field name="arch" type="xml"><![CDATA[
                 <data>
+                    <!-- Remove the screen action buttons from their current position -->
+                    <xpath expr="/tree/button[@name='checked_in']" position="replace"/>
+                    <xpath expr="/tree/button[@name='call']" position="replace"/>
+                    <xpath expr="/tree/button[@name='in_atention']" position="replace"/>
+
                     <!-- Remove appointment_date (date widget) from its current position -->
                     <xpath expr="/tree/field[@name='appointment_date'][@widget='date']" position="replace"/>
 
@@ -32,20 +37,17 @@ SPDX-License-Identifier: GPL-3.0-or-later
                     <!-- Remove the original no_show button so we can place it after En atención -->
                     <xpath expr="/tree/button[@name='no_show']" position="replace"/>
 
-                    <!-- Re-insert the original no_show button after the current screen action -->
-                    <xpath expr="/tree/button[@name='in_atention']" position="after">
-                        <button name="no_show" help="The patient did not show up" string="No show"/>
-                    </xpath>
-
-                    <!-- Re-insert healthprof before patient -->
-                    <xpath expr="/tree/field[@name='patient']" position="before">
+                    <!-- Keep patient immediately after healthprof -->
+                    <xpath expr="/tree/field[@name='patient']" position="replace"/>
+                    <xpath expr="/tree/field[@name='state']" position="before">
                         <field name="healthprof" expand="1" width="300"/>
-                    </xpath>
-
-                    <!-- Re-insert date/time fields after patient -->
-                    <xpath expr="/tree/field[@name='patient']" position="after">
+                        <field name="patient" expand="1" width="300"/>
                         <field name="appointment_date" string="Date" widget="date"/>
                         <field name="appointment_date" string="Time" widget="time"/>
+                        <button name="checked_in" help="The patient has arrived and is waiting" string="Checked in"/>
+                        <button name="call" help="" string="Llamar"/>
+                        <button name="in_atention" help="" string="En atención"/>
+                        <button name="no_show" help="The patient did not show up" string="No show"/>
                     </xpath>
                 </data>
             ]]></field>
